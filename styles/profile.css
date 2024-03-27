@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden; 
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #1d1d1d;
+    padding: 5% 0 0 10%;
+}
+
+.headProfile {
+    margin: 2%;
+    transform: translateX(-12%);
+}
+
+.textProfile {
+    text-align: center;
+    color: #fff;
+}
+
+.formProfile {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.formProfile input {
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+}
+
+.formProfile button {
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    background: #00ff6e;
+    /* color: #fff; */
+}
+
+.formProfile i {
+    margin-inline: 5px;
+}
+
+
+
+.textProfile {
+    text-align: center;
+    color: #fff;
+}
+
+.tableProfile {
+    display: flex;
+    flex-direction: column;
+    /* size: 10px; */
+}
+
+
+.tableProfile th {
+    text-align: center;
+    width: auto;
+}
+
+
+.tableProfile table {
+    width: 300%;
+    background: #fff;
+    border-radius: 20px;
+    height: 10%;
+    /* height: 20vh; */
+    padding: 20px;
+}
+
+.tableProfile td {
+    border-radius: 8px;
+    height: 10px;
+    /* border: 2px solid #000; */
+    background: #eaeaea;
+    /* text-align: left; */
+    padding: 6px;
+    line-height: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.tableProfile th {
+    height: 30px;
+    padding: 6px;
+    border-radius: 8px;
+    background: #00ff6e;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+
+.edit-btn {
+    background: #00ff6e;
+    color: #000;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.delete-btn {
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.alertProfile {
+    background-color: #ff0000;
+    color: #fff;
+}

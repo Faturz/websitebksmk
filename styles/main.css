@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 6rem;
+    color: #fff;
+    height: 100vh;
+    border-radius: 0em 1em 1em 0;
+    z-index: 10000000;
+    padding: 20px 40px;
+    background: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    transition: 0.4s;
+}
+
+/* javascriptFunc */
+
+.sideActive {
+    width: 17rem;
+}
+
+.header h4 {
+    display: none;
+}
+
+.header p {
+    display: none;
+}
+
+.sideActive h4 {
+    display: block;
+}
+
+.sideActive p {
+    display: block;
+}
+
+.navUpper {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    position: fixed;
+    background: #2c2c2c;
+    width: 100%;
+    /* padding: 1em; */
+}
+
+.bx {
+    padding: 8px;
+    margin: 3px;
+    /* margin-top: 4px; */
+}
+
+
+.bx-menu-alt-left {
+    cursor: pointer;
+    color: #fff;
+}
+
+.search {
+    background: #fff;
+    text-align: center;
+    border: none;
+    padding: 4px;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.search::placeholder {
+    color: #323232;
+}
+
+.nav {
+    transition: 0.4s;
+}
+
+.navWrap {
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.navWrap * {
+    border-radius: 5px;
+    padding: 4px;
+    /* transition: 0.2s; */
+}   
+
+.navWrap a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+}
+
+#btn {
+    font-size: 18px;
+    margin-left: 3px;
+}
+
+#btn:hover {
+    color: #3bff93;
+}
+
+.navWrap p {
+    margin-top: -3px;
+    margin-left: 3px;
+}
+
+.navWrap h5 {
+    cursor: pointer;
+}
+
+.navWrap a:hover {
+    background: #00ff620b;
+    color: #3bff93;
+}
+
+/* .container {
+    max-width: 1000px;
+    margin: 100px auto 40px;
+    background-color: #fff;
+    margin-left: 20%;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+.container {
+    padding: 5%;
+}
+
+
+.action-column {
+    width: 120px; /* perkecil lebar kolom aksi */
+}
+
+.action-column a {
+    display: inline-block;
+    padding: 4px 8px; /* perkecil padding tombol aksi */
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-size: 0.85em; /* perkecil ukuran font tombol aksi */
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    padding: 6px 12px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em; /* perkecil ukuran font tombol submit */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.edit-link,
+.delete-link {
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85em; /* perkecil ukuran font tombol edit dan delete */
+}
+
+.edit-link:hover {
+    background-color: #45a049;
+}
+
+.delete-link:hover {
+    background-color: #db4433;
+}
+
+
+/* Home Page */
+
+.mainPage {
+    color: #fff;
+    background: #232323;
+    width: 100%;
+    height: 100vh;
+}
+
+.mainChild {
+    text-align: center;
+    margin: 4em 0 0 5em;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.mainChild h4 {
+    color: #3bff93;
+}
+
+.mainBox {
+    text-align: center;
+    width: 20%;
+    padding: 40px;
+    color: #fff;
+    background: #323232;
+    border-radius: 20px;
+}
+
+.mainBox h1 {
+    font-size: 60px;
+}
+
+.box-2 h4 {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.wrapperBox {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    transform: translateX(50px)
+    translateY(20px);
+}
+
+/* Container All Pages */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #1d1d1d;
+    padding: 5% 0 0 10%;
+}
+
+/* Profile */
+
+.headProfile {
+    margin: 2%;
+    transform: translateX(-12%);
+}
+
+.textProfile {
+    text-align: center;
+    color: #fff;
+}
+
+.formProfile {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.formProfile input {
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+}
+
+.formProfile button {
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    background: #00ff6e;
+    /* color: #fff; */
+}
+
+.formProfile i {
+    margin-inline: 5px;
+}
+
+
+
+.textProfile {
+    text-align: center;
+    color: #fff;
+}
+
+.tableProfile {
+    display: flex;
+    flex-direction: column;
+    /* size: 10px; */
+}
+
+
+.tableProfile th {
+    text-align: center;
+    width: auto;
+}
+
+
+.tableProfile table {
+    background: #fff;
+    border-radius: 20px;
+    width: 300%;
+    height: 10%;
+    padding: 20px;
+}
+
+.tableProfile td {
+    border-radius: 8px;
+    height: 10px;
+    /* border: 2px solid #000; */
+    background: #eaeaea;
+    /* text-align: left; */
+    padding: 6px;
+    line-height: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.tableProfile th {
+    height: 30px;
+    padding: 6px;
+    border-radius: 8px;
+    background: #00ff6e;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+
+.edit-btn {
+    background: #00ff6e;
+    color: #000;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.delete-btn {
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+
+.edit-btn {
+    background: #00ff6e;
+    color: #000;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.delete-btn {
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.editBtn {
+    border: none;
+    background: #00ff6e;
+    border-radius: 8px;
+}
+
+.deleteBtn {
+    border: none;
+    background: #ff0000;
+    border-radius: 8px;
+}
+
+.editBtn a {
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.deleteBtn a {
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.alertProfile {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+/* Minat Bakat */
+
+.tableBakat {
+    display: flex;
+    flex-direction: column;
+    /* size: 10px; */
+}
+
+.tableSiswa table {
+    background: #fff;
+    border-radius: 20px;
+    width: 90%;
+    height: 10%;
+    padding: 20px;
+}
+
+
+.tableSiswa td {
+    border-radius: 8px;
+    height: 10px;
+    /* border: 2px solid #000; */
+    background: #eaeaea;
+    /* text-align: left; */
+    padding: 6px;
+    line-height: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.tableSiswa th {
+    height: 30px;
+    padding: 6px;
+    border-radius: 8px;
+    background: #00ff6e;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
