@@ -13,6 +13,7 @@
             </div>
         </div>
     </form>
+    <div class="tableSiswa">
         <table>
             <tr>
                 <th>No</th>
@@ -64,8 +65,6 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?>
 
-        </table>
-    </div>
 
     <!-- JavaScript untuk konfirmasi penghapusan -->
     <script>
@@ -96,6 +95,7 @@ $conn->close();
     }
     ?>
     </table>
+    </div>
     </div>
 </body>
 </html>

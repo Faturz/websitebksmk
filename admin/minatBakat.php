@@ -15,7 +15,7 @@
             </form>
         </div>
     </div>
-    <div class="tableBakat" style="overflow-x: auto;">
+    <div class="tableSiswa" style="overflow-x: auto;">
     <table>
         <tr>
             <th>Nama Siswa</th>
